@@ -5,7 +5,7 @@ import ZetaBox.Core.Positioning;
 class GameObject {}
 
 interface IObject {
-	@property Position Posiion();
+	@property Position Position();
 }
 
 interface ICompoundObject {
