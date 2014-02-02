@@ -1,0 +1,96 @@
+[
+ {
+  "name" : "ZetaBox.Core.GameObject",
+  "kind" : "module",
+  "file" : "GameObject.d",
+  "members" : [
+   {
+    "name" : "ZetaBox.Core.Positioning",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "GameObject",
+    "kind" : "class",
+    "line" : 5,
+    "members" : []
+   },
+   {
+    "name" : "IObject",
+    "kind" : "interface",
+    "line" : 7,
+    "members" : [
+     {
+      "name" : "Posiion",
+      "kind" : "function",
+      "line" : 8,
+      "storageClass" : [
+       "abstract",
+       "@property"
+      ],
+      "deco" : "FNdZC7ZetaBox4Core11Positioning8Position",
+      "originalType" : "Position()"
+     }
+    ]
+   },
+   {
+    "name" : "ICompoundObject",
+    "kind" : "interface",
+    "line" : 11,
+    "members" : [
+     {
+      "name" : "Add",
+      "kind" : "function",
+      "line" : 12,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FC7ZetaBox4Core10GameObject7IObjectZv",
+      "parameters" : [
+       {
+        "name" : "object",
+        "deco" : "C7ZetaBox4Core10GameObject7IObject"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "ZetaBox.Core.Positioning",
+  "kind" : "module",
+  "file" : "Positioning.d",
+  "members" : [
+   {
+    "name" : "Position",
+    "kind" : "class",
+    "line" : 3,
+    "members" : [
+     {
+      "name" : "x",
+      "kind" : "variable",
+      "line" : 4,
+      "deco" : "d",
+      "offset" : 8
+     },
+     {
+      "name" : "y",
+      "kind" : "variable",
+      "line" : 5,
+      "deco" : "d",
+      "offset" : 16
+     },
+     {
+      "name" : "z",
+      "kind" : "variable",
+      "line" : 6,
+      "deco" : "d",
+      "offset" : 24
+     }
+    ]
+   }
+  ]
+ }
+]

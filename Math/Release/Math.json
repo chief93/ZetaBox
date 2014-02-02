@@ -1,0 +1,8 @@
+[
+ {
+  "name" : "lib",
+  "kind" : "module",
+  "file" : "lib.d",
+  "members" : []
+ }
+]
