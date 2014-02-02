@@ -1,0 +1,8 @@
+Release\GameTest.build.lnkarg
+C:\D\dmd2\windows\bin\sc.ini
+Release\GameTest.obj
+C:\D\dmd2\windows\bin\..\lib\user32.lib
+C:\D\dmd2\windows\bin\..\lib\kernel32.lib
+C:\D\dmd2\windows\bin\..\lib\snn.lib
+C:\D\dmd2\windows\bin\..\lib\phobos.lib
+C:\D\dmd2\windows\bin\..\lib\shell32.lib
