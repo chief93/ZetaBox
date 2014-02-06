@@ -1,3 +1,0 @@
-ZetaBox.Core.GameObject (GameObject.d) : private : object (D:\\dev\\denv\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\object.di)
-ZetaBox.Core.Positioning (Positioning.d) : private : object (D:\\dev\\denv\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\object.di)
-ZetaBox.Core.GameObject (GameObject.d) : private : ZetaBox.Core.Positioning (Positioning.d)

@@ -1,38 +1,74 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{002A2DE9-8BB6-484D-9802-7E4AD4084715}") = "GameTest", "GameTest\GameTest.visualdproj", "{1CA0E45E-3D55-4412-9A3B-B59AE904EC03}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ZetaGraphics", "ZetaGraphics", "{C5CD3C4D-4799-419C-BF2B-C0818CA22E7B}"
 EndProject
-Project("{002A2DE9-8BB6-484D-9802-7E4AD4084715}") = "Primitives", "Primitives\Primitives.visualdproj", "{A942560A-A393-4866-90DE-20B2B18069A9}"
+Project("{3947E667-4C90-4C3A-BEB9-7148D6FE0D7C}") = "Core", "ZetaGraphics\Core\Core.dproj", "{0D358AB5-2103-4D81-A835-D86EA176A2FB}"
 EndProject
-Project("{002A2DE9-8BB6-484D-9802-7E4AD4084715}") = "Core", "Core\Core.visualdproj", "{88A8F303-F9E4-46D1-84E8-4FA531342876}"
+Project("{3947E667-4C90-4C3A-BEB9-7148D6FE0D7C}") = "Primitives", "ZetaGraphics\Primitives\Primitives.dproj", "{6F174AC8-33A7-4006-A950-7CD291293A85}"
 EndProject
-Project("{002A2DE9-8BB6-484D-9802-7E4AD4084715}") = "Math", "Math\Math.visualdproj", "{AD5EFF35-C821-45C5-81F0-0ECFB6A35FE8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ZetaUI", "ZetaUI", "{63F08C44-F7AD-44F9-A544-AC2D1ED39F11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ZetaNetwork", "ZetaNetwork", "{EAFA13AB-0D00-4AD3-835F-5CEC22D3988F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ZetaSound", "ZetaSound", "{EFA96F7B-C5D8-455E-9EA1-75387EA560D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ZetaSimulation", "ZetaSimulation", "{B05C7712-C98B-481F-BD31-C3868EC1578C}"
+EndProject
+Project("{3947E667-4C90-4C3A-BEB9-7148D6FE0D7C}") = "Math", "ZetaSimulation\Math\Math.dproj", "{55B1A247-AFE0-475C-9329-CBFA470B1BF0}"
+EndProject
+Project("{3947E667-4C90-4C3A-BEB9-7148D6FE0D7C}") = "Physics", "ZetaSimulation\Physics\Physics.dproj", "{F6311433-CB9A-4BE1-8E7D-0CB59FD52CBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DA8E3191-31C1-4D4A-8D92-91D11819459E}"
+EndProject
+Project("{3947E667-4C90-4C3A-BEB9-7148D6FE0D7C}") = "ZetaSpaceGame", "Tests\ZetaSpaceGame\ZetaSpaceGame.dproj", "{B57A0141-4A5E-486A-924A-0431CE978556}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Win32 = Debug|Win32
-		Release|Win32 = Release|Win32
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Unittest|Any CPU = Unittest|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1CA0E45E-3D55-4412-9A3B-B59AE904EC03}.Debug|Win32.ActiveCfg = Debug|Win32
-		{1CA0E45E-3D55-4412-9A3B-B59AE904EC03}.Debug|Win32.Build.0 = Debug|Win32
-		{1CA0E45E-3D55-4412-9A3B-B59AE904EC03}.Release|Win32.ActiveCfg = Release|Win32
-		{1CA0E45E-3D55-4412-9A3B-B59AE904EC03}.Release|Win32.Build.0 = Release|Win32
-		{A942560A-A393-4866-90DE-20B2B18069A9}.Debug|Win32.ActiveCfg = Debug|Win32
-		{A942560A-A393-4866-90DE-20B2B18069A9}.Debug|Win32.Build.0 = Debug|Win32
-		{A942560A-A393-4866-90DE-20B2B18069A9}.Release|Win32.ActiveCfg = Release|Win32
-		{A942560A-A393-4866-90DE-20B2B18069A9}.Release|Win32.Build.0 = Release|Win32
-		{88A8F303-F9E4-46D1-84E8-4FA531342876}.Debug|Win32.ActiveCfg = Debug|Win32
-		{88A8F303-F9E4-46D1-84E8-4FA531342876}.Debug|Win32.Build.0 = Debug|Win32
-		{88A8F303-F9E4-46D1-84E8-4FA531342876}.Release|Win32.ActiveCfg = Release|Win32
-		{88A8F303-F9E4-46D1-84E8-4FA531342876}.Release|Win32.Build.0 = Release|Win32
-		{AD5EFF35-C821-45C5-81F0-0ECFB6A35FE8}.Debug|Win32.ActiveCfg = Debug|Win32
-		{AD5EFF35-C821-45C5-81F0-0ECFB6A35FE8}.Debug|Win32.Build.0 = Debug|Win32
-		{AD5EFF35-C821-45C5-81F0-0ECFB6A35FE8}.Release|Win32.ActiveCfg = Release|Win32
-		{AD5EFF35-C821-45C5-81F0-0ECFB6A35FE8}.Release|Win32.Build.0 = Release|Win32
+		{0D358AB5-2103-4D81-A835-D86EA176A2FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D358AB5-2103-4D81-A835-D86EA176A2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D358AB5-2103-4D81-A835-D86EA176A2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D358AB5-2103-4D81-A835-D86EA176A2FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D358AB5-2103-4D81-A835-D86EA176A2FB}.Unittest|Any CPU.ActiveCfg = Unittest|Any CPU
+		{0D358AB5-2103-4D81-A835-D86EA176A2FB}.Unittest|Any CPU.Build.0 = Unittest|Any CPU
+		{55B1A247-AFE0-475C-9329-CBFA470B1BF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B1A247-AFE0-475C-9329-CBFA470B1BF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B1A247-AFE0-475C-9329-CBFA470B1BF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B1A247-AFE0-475C-9329-CBFA470B1BF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B1A247-AFE0-475C-9329-CBFA470B1BF0}.Unittest|Any CPU.ActiveCfg = Unittest|Any CPU
+		{55B1A247-AFE0-475C-9329-CBFA470B1BF0}.Unittest|Any CPU.Build.0 = Unittest|Any CPU
+		{6F174AC8-33A7-4006-A950-7CD291293A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F174AC8-33A7-4006-A950-7CD291293A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F174AC8-33A7-4006-A950-7CD291293A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F174AC8-33A7-4006-A950-7CD291293A85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F174AC8-33A7-4006-A950-7CD291293A85}.Unittest|Any CPU.ActiveCfg = Unittest|Any CPU
+		{6F174AC8-33A7-4006-A950-7CD291293A85}.Unittest|Any CPU.Build.0 = Unittest|Any CPU
+		{B57A0141-4A5E-486A-924A-0431CE978556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B57A0141-4A5E-486A-924A-0431CE978556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B57A0141-4A5E-486A-924A-0431CE978556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B57A0141-4A5E-486A-924A-0431CE978556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B57A0141-4A5E-486A-924A-0431CE978556}.Unittest|Any CPU.ActiveCfg = Unittest|Any CPU
+		{B57A0141-4A5E-486A-924A-0431CE978556}.Unittest|Any CPU.Build.0 = Unittest|Any CPU
+		{F6311433-CB9A-4BE1-8E7D-0CB59FD52CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6311433-CB9A-4BE1-8E7D-0CB59FD52CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6311433-CB9A-4BE1-8E7D-0CB59FD52CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6311433-CB9A-4BE1-8E7D-0CB59FD52CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6311433-CB9A-4BE1-8E7D-0CB59FD52CBF}.Unittest|Any CPU.ActiveCfg = Unittest|Any CPU
+		{F6311433-CB9A-4BE1-8E7D-0CB59FD52CBF}.Unittest|Any CPU.Build.0 = Unittest|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
+	GlobalSection(NestedProjects) = preSolution
+		{0D358AB5-2103-4D81-A835-D86EA176A2FB} = {C5CD3C4D-4799-419C-BF2B-C0818CA22E7B}
+		{6F174AC8-33A7-4006-A950-7CD291293A85} = {C5CD3C4D-4799-419C-BF2B-C0818CA22E7B}
+		{55B1A247-AFE0-475C-9329-CBFA470B1BF0} = {B05C7712-C98B-481F-BD31-C3868EC1578C}
+		{F6311433-CB9A-4BE1-8E7D-0CB59FD52CBF} = {B05C7712-C98B-481F-BD31-C3868EC1578C}
+		{B57A0141-4A5E-486A-924A-0431CE978556} = {DA8E3191-31C1-4D4A-8D92-91D11819459E}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ZetaSimulation\Math\Math.dproj
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests\ZetaSpaceGame\main.d">
+    <Files>
+      <File FileName="ZetaGraphics\Core\Primitive.d" Line="7" Column="2" />
+      <File FileName="ZetaGraphics\Core\IRenderableObject.d" Line="1" Column="1" />
+      <File FileName="ZetaGraphics\Core\Position.d" Line="1" Column="1" />
+      <File FileName="Tests\ZetaSpaceGame\main.d" Line="5" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
