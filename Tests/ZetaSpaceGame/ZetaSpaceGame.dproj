@@ -6,9 +6,9 @@
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{B57A0141-4A5E-486A-924A-0431CE978556}</ProjectGuid>
-    <UseDefaultCompiler>true</UseDefaultCompiler>
+    <UseDefaultCompiler>false</UseDefaultCompiler>
     <IncrementalLinking>true</IncrementalLinking>
-    <PreferOneStepBuild>true</PreferOneStepBuild>
+    <PreferOneStepBuild>false</PreferOneStepBuild>
     <Compiler>DMD2</Compiler>
     <newfilesearch>OnLoad</newfilesearch>
     <DependentProjectIds>
@@ -30,6 +30,12 @@
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
     <OutputName>ZetaSpaceGame</OutputName>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="Build" command="dmd.exe main.d -I&quot;D:\dev\projects\d\ZetaBox\ZetaGraphics\Core\bin\Debug\libCore.lib&quot; &quot;D:\dev\projects\d\ZetaBox\ZetaGraphics\Primitives\bin\Debug\libPrimitives.lib&quot; &quot;D:\dev\projects\d\ZetaBox\ZetaSimulation\Math\bin\Debug\libMath.lib&quot; &quot;D:\dev\projects\d\ZetaBox\ZetaSimulation\Physics\bin\Debug\libPhysics.lib&quot; &quot;-I=D:\dev\projects\d\ZetaBox\ZetaGraphics\Core&quot; &quot;-I=D:\dev\projects\d\ZetaBox\ZetaGraphics\Primitives&quot; &quot;-I=D:\dev\projects\d\ZetaBox\ZetaSimulation\Math&quot; &quot;-I=D:\dev\projects\d\ZetaBox\ZetaSimulation\Physics&quot; &quot;-od=obj\Debug&quot; &quot;-of=D:\dev\projects\d\ZetaBox\Tests\ZetaSpaceGame\bin\Debug\ZetaSpaceGame.exe&quot;" />
+      </CustomCommands>
+    </CustomCommands>
+    <ExtraCompilerArguments>-g</ExtraCompilerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>

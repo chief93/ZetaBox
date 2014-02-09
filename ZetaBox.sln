@@ -69,6 +69,10 @@ Global
 		{B57A0141-4A5E-486A-924A-0431CE978556} = {DA8E3191-31C1-4D4A-8D92-91D11819459E}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ZetaSimulation\Math\Math.dproj
+		StartupItem = Tests\ZetaSpaceGame\ZetaSpaceGame.dproj
+		Policies = $0
+		$0.StandardHeader = $1
+		$1.Text = 
+		$1.IncludeInNewFiles = True
 	EndGlobalSection
 EndGlobal
