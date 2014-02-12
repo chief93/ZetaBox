@@ -45,8 +45,11 @@
     <OutputName>libCore</OutputName>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Primitive.d" />
-    <Compile Include="IRenderableObject.d" />
-    <Compile Include="Position.d" />
+    <Compile Include="Core\IRenderableObject.d" />
+    <Compile Include="Core\Position.d" />
+    <Compile Include="Core\Primitive.d" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
   </ItemGroup>
 </Project>
