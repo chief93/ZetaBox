@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6F174AC8-33A7-4006-A950-7CD291293A85}</ProjectGuid>
+    <ProjectGuid>{083A7749-9A72-46F1-93AC-ED86B8C160CD}</ProjectGuid>
     <UseDefaultCompiler>true</UseDefaultCompiler>
     <IncrementalLinking>true</IncrementalLinking>
     <PreferOneStepBuild>true</PreferOneStepBuild>
@@ -21,7 +21,7 @@
     <UnittestMode>false</UnittestMode>
     <Externalconsole>true</Externalconsole>
     <Target>StaticLibrary</Target>
-    <OutputName>libPrimitives</OutputName>
+    <OutputName>libZetaBox.Graphics</OutputName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>
@@ -31,7 +31,7 @@
     <UnittestMode>false</UnittestMode>
     <Externalconsole>true</Externalconsole>
     <Target>StaticLibrary</Target>
-    <OutputName>libPrimitives</OutputName>
+    <OutputName>libZetaBox.Graphics</OutputName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,9 +42,16 @@
     <UnittestMode>true</UnittestMode>
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
-    <OutputName>libPrimitives</OutputName>
+    <OutputName>libZetaBox.Graphics</OutputName>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="myClass.d" />
+    <Folder Include="ZetaBox\" />
+    <Folder Include="ZetaBox\Graphics\" />
+    <Folder Include="ZetaBox\Graphics\Core\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ZetaBox\Graphics\Core\Primitive.d" />
+    <Compile Include="ZetaBox\Graphics\Core\IRenderable.d" />
+    <Compile Include="ZetaBox\Graphics\Core\Position3D.d" />
   </ItemGroup>
 </Project>

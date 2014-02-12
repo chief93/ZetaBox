@@ -1,8 +1,7 @@
 module main;
 
 import std.stdio;
-
-import Core.Primitive;
+import ZetaBox.Graphics.Core.Primitive;
 
 void main(string[] args)
 {
@@ -12,4 +11,3 @@ void main(string[] args)
 	// Lets the user press <Return> before program returns
 	stdin.readln();
 }
-

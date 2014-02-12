@@ -5,12 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0D358AB5-2103-4D81-A835-D86EA176A2FB}</ProjectGuid>
+    <ProjectGuid>{CA1FDD1A-3587-417F-8296-BE97E54B047A}</ProjectGuid>
     <UseDefaultCompiler>true</UseDefaultCompiler>
     <IncrementalLinking>true</IncrementalLinking>
-    <PreferOneStepBuild>true</PreferOneStepBuild>
-    <BaseDirectory>.</BaseDirectory>
+    <PreferOneStepBuild>false</PreferOneStepBuild>
     <Compiler>DMD2</Compiler>
+    <DependentProjectIds>
+      <DependentProjectIds>
+        <String>{083A7749-9A72-46F1-93AC-ED86B8C160CD}</String>
+      </DependentProjectIds>
+    </DependentProjectIds>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,8 +24,8 @@
     <DebugLevel>0</DebugLevel>
     <UnittestMode>false</UnittestMode>
     <Externalconsole>true</Externalconsole>
-    <Target>StaticLibrary</Target>
-    <OutputName>libCore</OutputName>
+    <Target>Executable</Target>
+    <OutputName>ZetaSpace</OutputName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>
@@ -30,8 +34,8 @@
     <DebugLevel>0</DebugLevel>
     <UnittestMode>false</UnittestMode>
     <Externalconsole>true</Externalconsole>
-    <Target>StaticLibrary</Target>
-    <OutputName>libCore</OutputName>
+    <Target>Executable</Target>
+    <OutputName>ZetaSpace</OutputName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,14 +46,9 @@
     <UnittestMode>true</UnittestMode>
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
-    <OutputName>libCore</OutputName>
+    <OutputName>ZetaSpace</OutputName>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Core\IRenderableObject.d" />
-    <Compile Include="Core\Position.d" />
-    <Compile Include="Core\Primitive.d" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Core\" />
+    <Compile Include="main.d" />
   </ItemGroup>
 </Project>
