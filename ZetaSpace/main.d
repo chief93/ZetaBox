@@ -1,13 +1,14 @@
 module main;
 
+pragma(lib, "D:\\dev\\projects\\d\\ZetaBox\\ZetaBox.Graphics.Core\\bin\\Debug\\libZetaBox.lib");
+
 import std.stdio;
 import ZetaBox.Graphics.Core.Primitive;
 
-void main(string[] args)
-{
-	// Prints "Hello World" string in console
+int main (string[] args) {
 	writeln("Hello World!");
-	
-	// Lets the user press <Return> before program returns
-	stdin.readln();
+	Primitive primitive=new Primitive();
+
+	readln();
+	return 0;
 }

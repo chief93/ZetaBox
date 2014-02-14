@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ZetaSpace\main.d">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ZetaBox.Graphics.Core\ZetaBox\Graphics\Core\Primitive.d">
     <Files>
-      <File FileName="ZetaBox.Graphics.Core\ZetaBox\Graphics\Core\Primitive.d" Line="1" Column="1" />
-      <File FileName="ZetaSpace\main.d" Line="4" Column="1" />
+      <File FileName="ZetaSpace\main.d" Line="12" Column="2" />
+      <File FileName="ZetaBox.Graphics.Core\ZetaBox\Graphics\Core\Primitive.d" Line="3" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

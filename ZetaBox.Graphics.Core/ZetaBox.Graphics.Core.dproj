@@ -9,19 +9,26 @@
     <UseDefaultCompiler>true</UseDefaultCompiler>
     <IncrementalLinking>true</IncrementalLinking>
     <PreferOneStepBuild>true</PreferOneStepBuild>
-    <BaseDirectory>.</BaseDirectory>
     <Compiler>DMD2</Compiler>
+    <Includes>
+      <Includes>
+        <Path>lib\import</Path>
+        <Path>lib\lib</Path>
+        <Path>D:\dev\projects\d\ZetaBox\ZetaBox.Graphics.Core\lib\lib\dmd</Path>
+      </Includes>
+    </Includes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\Debug</OutputPath>
-    <LinkinThirdPartyLibraries>false</LinkinThirdPartyLibraries>
+    <LinkinThirdPartyLibraries>true</LinkinThirdPartyLibraries>
     <ObjectsDirectory>obj\Debug</ObjectsDirectory>
     <DebugLevel>0</DebugLevel>
     <UnittestMode>false</UnittestMode>
     <Externalconsole>true</Externalconsole>
     <Target>StaticLibrary</Target>
     <OutputName>libZetaBox.Graphics</OutputName>
+    <ExtraCompilerArguments>-H -Hd"export"</ExtraCompilerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>
@@ -32,6 +39,11 @@
     <Externalconsole>true</Externalconsole>
     <Target>StaticLibrary</Target>
     <OutputName>libZetaBox.Graphics</OutputName>
+    <Libs>
+      <Libs>
+        <Lib>D:\dev\projects\d\ZetaBox\ZetaBox.Graphics.Core\lib\lib\OPENGL32.LIB</Lib>
+      </Libs>
+    </Libs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,15 +55,21 @@
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
     <OutputName>libZetaBox.Graphics</OutputName>
+    <Libs>
+      <Libs>
+        <Lib>D:\dev\projects\d\ZetaBox\ZetaBox.Graphics.Core\lib\lib\OPENGL32.LIB</Lib>
+      </Libs>
+    </Libs>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="ZetaBox\" />
     <Folder Include="ZetaBox\Graphics\" />
     <Folder Include="ZetaBox\Graphics\Core\" />
+    <Folder Include="ZetaBox\lib\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ZetaBox\Graphics\Core\Primitive.d" />
     <Compile Include="ZetaBox\Graphics\Core\IRenderable.d" />
-    <Compile Include="ZetaBox\Graphics\Core\Position3D.d" />
+    <Compile Include="ZetaBox\Graphics\Core\Position.d" />
   </ItemGroup>
 </Project>
