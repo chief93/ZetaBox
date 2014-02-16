@@ -5,18 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{CA1FDD1A-3587-417F-8296-BE97E54B047A}</ProjectGuid>
+    <ProjectGuid>{7D47D390-E867-4EFE-A8AC-0E847FD8ED23}</ProjectGuid>
     <UseDefaultCompiler>true</UseDefaultCompiler>
     <IncrementalLinking>true</IncrementalLinking>
-    <PreferOneStepBuild>false</PreferOneStepBuild>
+    <PreferOneStepBuild>true</PreferOneStepBuild>
+    <BaseDirectory>.</BaseDirectory>
     <Compiler>DMD2</Compiler>
-    <newfilesearch>OnLoad</newfilesearch>
-    <Includes>
-      <Includes>
-        <Path>..\ZetaBox.Graphics.Core\export</Path>
-        <Path>..\ZetaBox.Graphics.Core\bin\Debug</Path>
-      </Includes>
-    </Includes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,7 +21,7 @@
     <UnittestMode>false</UnittestMode>
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
-    <OutputName>ZetaSpace</OutputName>
+    <OutputName>ZetaBox.Simulation</OutputName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>
@@ -37,13 +31,7 @@
     <UnittestMode>false</UnittestMode>
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
-    <OutputName>ZetaSpace</OutputName>
-    <Libs>
-      <Libs>
-        <Lib>D:\dev\projects\d\ZetaBox\ZetaBox.Graphics.Core\bin\Debug\libZetaBox.lib</Lib>
-      </Libs>
-    </Libs>
-    <ExtraCompilerArguments> -I"..\ZetaBox.Graphics.Core\export" -I"..\ZetaBox.Graphics.Core\bin\Debug\"</ExtraCompilerArguments>
+    <OutputName>ZetaBox.Simulation</OutputName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,17 +42,9 @@
     <UnittestMode>true</UnittestMode>
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
-    <OutputName>ZetaSpace</OutputName>
-    <Libs>
-      <Libs>
-        <Lib>D:\dev\projects\d\ZetaBox\ZetaBox.Graphics.Core\bin\Debug\libZetaBox.lib</Lib>
-      </Libs>
-    </Libs>
-    <ExtraCompilerArguments> -I"..\ZetaBox.Graphics.Core\export" -I"..\ZetaBox.Graphics.Core\bin\Debug\"</ExtraCompilerArguments>
+    <OutputName>ZetaBox.Simulation</OutputName>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="main.d">
-      <LastGenOutput>obj\Debug\main.obj</LastGenOutput>
-    </Compile>
+    <Compile Include="__blank.d" />
   </ItemGroup>
 </Project>

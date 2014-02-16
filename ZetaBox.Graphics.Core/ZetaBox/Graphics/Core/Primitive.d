@@ -97,18 +97,4 @@ class Primitive {
 		// need to render!
 		SDL_GL_SwapWindow(window);
 	}
-
-	/*
-	private void logic () {
-		GLfloat[] vertices=[
-			-1, -1, 0,
-			1, -1, 0,
-			0, 1, 0,
-		];
-		
-		//gen buffers access violation
-		glGenBuffers(1, &vertex);
-		glBindBuffer(GL_ARRAY_BUFFER, vertex);
-		glBufferData(GL_ARRAY_BUFFER, vertices.length*GL_FLOAT, vertices.ptr, GL_STATIC_DRAW);
-	}*/
 }
