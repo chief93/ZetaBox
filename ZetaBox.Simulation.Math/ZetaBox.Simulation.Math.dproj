@@ -9,7 +9,6 @@
     <UseDefaultCompiler>true</UseDefaultCompiler>
     <IncrementalLinking>true</IncrementalLinking>
     <PreferOneStepBuild>true</PreferOneStepBuild>
-    <BaseDirectory>.</BaseDirectory>
     <Compiler>DMD2</Compiler>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -22,6 +21,7 @@
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
     <OutputName>ZetaBox.Simulation</OutputName>
+    <ExtraCompilerArguments>-H -Hd"export"</ExtraCompilerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>
@@ -46,5 +46,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="__blank.d" />
+    <Compile Include="ZetaBox\Simulation\Math\Vector.d" />
+    <Compile Include="ZetaBox\Simulation\Math\Point.d" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ZetaBox\" />
+    <Folder Include="ZetaBox\Simulation\" />
+    <Folder Include="ZetaBox\Simulation\Math\" />
   </ItemGroup>
 </Project>
