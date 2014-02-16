@@ -10,13 +10,13 @@
     <IncrementalLinking>true</IncrementalLinking>
     <PreferOneStepBuild>false</PreferOneStepBuild>
     <Compiler>DMD2</Compiler>
+    <newfilesearch>OnLoad</newfilesearch>
     <Includes>
       <Includes>
-        <Path>../ZetaBox.Graphics.Core/export</Path>
-        <Path>../ZetaBox.Graphics.Core/bin/Debug</Path>
+        <Path>..\ZetaBox.Graphics.Core\export</Path>
+        <Path>..\ZetaBox.Graphics.Core\bin\Debug</Path>
       </Includes>
     </Includes>
-    <newfilesearch>OnLoad</newfilesearch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,6 +28,7 @@
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
     <OutputName>ZetaSpace</OutputName>
+    <ExtraCompilerArguments> -I"..\ZetaBox.Graphics.Core\export" -I"..\ZetaBox.Graphics.Core\bin\Debug\"</ExtraCompilerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>
@@ -43,6 +44,7 @@
         <Lib>D:\dev\projects\d\ZetaBox\ZetaBox.Graphics.Core\bin\Debug\libZetaBox.lib</Lib>
       </Libs>
     </Libs>
+    <ExtraCompilerArguments> -I"..\ZetaBox.Graphics.Core\export" -I"..\ZetaBox.Graphics.Core\bin\Debug\"</ExtraCompilerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -59,8 +61,11 @@
         <Lib>D:\dev\projects\d\ZetaBox\ZetaBox.Graphics.Core\bin\Debug\libZetaBox.lib</Lib>
       </Libs>
     </Libs>
+    <ExtraCompilerArguments> -I"..\ZetaBox.Graphics.Core\export" -I"..\ZetaBox.Graphics.Core\bin\Debug\"</ExtraCompilerArguments>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="main.d" />
+    <Compile Include="main.d">
+      <LastGenOutput>obj\Debug\main.obj</LastGenOutput>
+    </Compile>
   </ItemGroup>
 </Project>

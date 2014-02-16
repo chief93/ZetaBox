@@ -12,23 +12,31 @@
     <Compiler>DMD2</Compiler>
     <Includes>
       <Includes>
-        <Path>lib\import</Path>
-        <Path>lib\lib</Path>
-        <Path>D:\dev\projects\d\ZetaBox\ZetaBox.Graphics.Core\lib\lib\dmd</Path>
+        <Path>D:\dev\denv\derelict\import</Path>
+        <Path>D:\dev\denv\derelict\lib\dmd</Path>
       </Includes>
     </Includes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\Debug</OutputPath>
-    <LinkinThirdPartyLibraries>true</LinkinThirdPartyLibraries>
+    <LinkinThirdPartyLibraries>false</LinkinThirdPartyLibraries>
     <ObjectsDirectory>obj\Debug</ObjectsDirectory>
     <DebugLevel>0</DebugLevel>
     <UnittestMode>false</UnittestMode>
     <Externalconsole>true</Externalconsole>
     <Target>StaticLibrary</Target>
     <OutputName>libZetaBox.Graphics</OutputName>
-    <ExtraCompilerArguments>-H -Hd"export"</ExtraCompilerArguments>
+    <ExtraCompilerArguments>-H -Hd"export" -I"D:\dev\denv\derelict\import"</ExtraCompilerArguments>
+    <ExtraLinkerArguments>+D:\dev\denv\derelict\lib\dmd</ExtraLinkerArguments>
+    <Libs>
+      <Libs>
+        <Lib>DerelictGL3.lib</Lib>
+        <Lib>DerelictGLFW3.lib</Lib>
+        <Lib>DerelictUtil.lib</Lib>
+        <Lib>DerelictSDL2.lib</Lib>
+      </Libs>
+    </Libs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>
@@ -44,6 +52,8 @@
         <Lib>D:\dev\projects\d\ZetaBox\ZetaBox.Graphics.Core\lib\lib\OPENGL32.LIB</Lib>
       </Libs>
     </Libs>
+    <ExtraCompilerArguments>-H -Hd"export"</ExtraCompilerArguments>
+    <ExtraLinkerArguments>+D:\dev\projects\d\ZetaBox\ZetaBox.Graphics.Core\lib\lib\dmd</ExtraLinkerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -60,12 +70,13 @@
         <Lib>D:\dev\projects\d\ZetaBox\ZetaBox.Graphics.Core\lib\lib\OPENGL32.LIB</Lib>
       </Libs>
     </Libs>
+    <ExtraCompilerArguments>-H -Hd"export"</ExtraCompilerArguments>
+    <ExtraLinkerArguments>+D:\dev\projects\d\ZetaBox\ZetaBox.Graphics.Core\lib\lib\dmd</ExtraLinkerArguments>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="ZetaBox\" />
     <Folder Include="ZetaBox\Graphics\" />
     <Folder Include="ZetaBox\Graphics\Core\" />
-    <Folder Include="ZetaBox\lib\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ZetaBox\Graphics\Core\Primitive.d" />
