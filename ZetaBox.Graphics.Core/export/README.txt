@@ -1,1 +1,0 @@
-You always need to follow .di files by package structure in 'export' folder, for compilation reason.

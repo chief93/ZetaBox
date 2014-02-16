@@ -13,10 +13,10 @@
     <newfilesearch>OnLoad</newfilesearch>
     <Includes>
       <Includes>
-        <Path>..\ZetaBox.Graphics.Core\export</Path>
-        <Path>..\ZetaBox.Graphics.Core\bin\Debug</Path>
-        <Path>..\ZetaBox.Simulation.Math\export</Path>
-        <Path>..\ZetaBox.Simulation.Math\bin\Debug</Path>
+        <Path>..\lib\derelict\import</Path>
+        <Path>..\lib\derelict\lib\dmd</Path>
+        <Path>..\output\import</Path>
+        <Path>..\output\lib</Path>
       </Includes>
     </Includes>
   </PropertyGroup>
@@ -65,8 +65,6 @@
     <ExtraCompilerArguments> -I"..\ZetaBox.Graphics.Core\export" -I"..\ZetaBox.Graphics.Core\bin\Debug\"</ExtraCompilerArguments>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="main.d">
-      <LastGenOutput>obj\Debug\main.obj</LastGenOutput>
-    </Compile>
+    <Compile Include="main.d" />
   </ItemGroup>
 </Project>

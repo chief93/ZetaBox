@@ -1,9 +1,9 @@
 module ZetaBox.Graphics.Core.Primitive;
 
-pragma(lib, "..\\ZetaBox.Graphics.Core\\import\\derelict\\lib\\dmd\\DerelictUtil.lib");
-pragma(lib, "..\\ZetaBox.Graphics.Core\\import\\derelict\\lib\\dmd\\DerelictGL3");
-pragma(lib, "..\\ZetaBox.Graphics.Core\\import\\derelict\\lib\\dmd\\DerelictGLFW3");
-pragma(lib, "..\\ZetaBox.Graphics.Core\\import\\derelict\\lib\\dmd\\DerelictSDL2");
+pragma(lib, "..\\lib\\derelict\\lib\\dmd\\DerelictUtil");
+pragma(lib, "..\\lib\\derelict\\lib\\dmd\\DerelictGL3");
+pragma(lib, "..\\lib\\derelict\\lib\\dmd\\DerelictGLFW3");
+pragma(lib, "..\\lib\\derelict\\lib\\dmd\\DerelictSDL2");
 
 import std.stdio;
 import std.string;
@@ -13,20 +13,6 @@ import derelict.util.loader;
 import derelict.opengl3.gl;
 import derelict.glfw3.glfw3;
 import derelict.sdl2.sdl;
-
-
-class KeyValuePair (TKey, TValue) {
-	TKey Key;
-	TValue Value;
-}
-
-class Dictionary (TKey, TValue) {
-	KeyValuePair[] _cache;
-
-	public this () {
-
-	}
-}
 
 class Primitive {
 	private GLuint vertex;

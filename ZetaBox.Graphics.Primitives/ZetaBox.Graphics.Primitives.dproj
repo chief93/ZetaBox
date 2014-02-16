@@ -13,14 +13,16 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\Debug</OutputPath>
+    <OutputPath>..\output\lib</OutputPath>
     <LinkinThirdPartyLibraries>false</LinkinThirdPartyLibraries>
-    <ObjectsDirectory>obj\Debug</ObjectsDirectory>
+    <ObjectsDirectory>..\obj</ObjectsDirectory>
     <DebugLevel>0</DebugLevel>
     <UnittestMode>false</UnittestMode>
     <Externalconsole>true</Externalconsole>
     <Target>StaticLibrary</Target>
-    <OutputName>ZetaBox.Graphics</OutputName>
+    <OutputName>ZetaBoxGraphicsPrimitives</OutputName>
+    <ExtraCompilerArguments>-H -Hd"..\output\import" -op</ExtraCompilerArguments>
+    <DDocDirectory>..\doc</DDocDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>
@@ -31,6 +33,7 @@
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
     <OutputName>ZetaBox.Graphics</OutputName>
+    <ExtraCompilerArguments>-H -Hd"..\output\import" -op</ExtraCompilerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,8 +45,14 @@
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
     <OutputName>ZetaBox.Graphics</OutputName>
+    <ExtraCompilerArguments>-H -Hd"..\output\import" -op</ExtraCompilerArguments>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="__blank.d" />
+    <Compile Include="ZetaBox\Graphics\Primitives\__blank.d" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ZetaBox\" />
+    <Folder Include="ZetaBox\Graphics\" />
+    <Folder Include="ZetaBox\Graphics\Primitives\" />
   </ItemGroup>
 </Project>

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7D47D390-E867-4EFE-A8AC-0E847FD8ED23}</ProjectGuid>
+    <ProjectGuid>{93C70EF5-9C30-4E37-9C19-7E84E41824AC}</ProjectGuid>
     <UseDefaultCompiler>true</UseDefaultCompiler>
     <IncrementalLinking>true</IncrementalLinking>
     <PreferOneStepBuild>true</PreferOneStepBuild>
@@ -20,7 +20,7 @@
     <UnittestMode>false</UnittestMode>
     <Externalconsole>true</Externalconsole>
     <Target>StaticLibrary</Target>
-    <OutputName>ZetaBoxSimulationMath</OutputName>
+    <OutputName>ZetaBoxCommon</OutputName>
     <ExtraCompilerArguments>-H -Hd"..\output\import" -op</ExtraCompilerArguments>
     <DDocDirectory>..\doc</DDocDirectory>
   </PropertyGroup>
@@ -31,8 +31,8 @@
     <DebugLevel>0</DebugLevel>
     <UnittestMode>false</UnittestMode>
     <Externalconsole>true</Externalconsole>
-    <Target>Executable</Target>
-    <OutputName>ZetaBox.Simulation</OutputName>
+    <Target>StaticLibrary</Target>
+    <OutputName>libZetaBox</OutputName>
     <ExtraCompilerArguments>-H -Hd"export"</ExtraCompilerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
@@ -44,16 +44,18 @@
     <UnittestMode>true</UnittestMode>
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
-    <OutputName>ZetaBox.Simulation</OutputName>
+    <OutputName>libZetaBox</OutputName>
     <ExtraCompilerArguments>-H -Hd"export"</ExtraCompilerArguments>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ZetaBox\Simulation\Math\Vector.d" />
-    <Compile Include="ZetaBox\Simulation\Math\Point.d" />
+    <Folder Include="ZetaBox\" />
+    <Folder Include="ZetaBox\Common\" />
+    <Folder Include="ZetaBox\Common\Collections\" />
+    <Folder Include="ZetaBox\Common\Events\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ZetaBox\" />
-    <Folder Include="ZetaBox\Simulation\" />
-    <Folder Include="ZetaBox\Simulation\Math\" />
+    <Compile Include="ZetaBox\Common\Collections\Dictionary.d" />
+    <Compile Include="ZetaBox\Common\Collections\KeyValuePair.d" />
+    <Compile Include="ZetaBox\Common\Events\IEvent.d" />
   </ItemGroup>
 </Project>
