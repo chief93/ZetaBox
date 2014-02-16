@@ -14,6 +14,20 @@ import derelict.opengl3.gl;
 import derelict.glfw3.glfw3;
 import derelict.sdl2.sdl;
 
+
+class KeyValuePair (TKey, TValue) {
+	TKey Key;
+	TValue Value;
+}
+
+class Dictionary (TKey, TValue) {
+	KeyValuePair[] _cache;
+
+	public this () {
+
+	}
+}
+
 class Primitive {
 	private GLuint vertex;
 

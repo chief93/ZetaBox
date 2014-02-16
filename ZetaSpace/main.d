@@ -9,6 +9,8 @@ int main (string[] args) {
 	writeln("Hello World!");
 	Primitive primitive=new Primitive();
 
+	//Dictionary!(string,string) dict=new Dictionary!(string,string)();
+
 	readln();
 	return 0;
 }

@@ -11,6 +11,26 @@ import derelict.util.loader;
 import derelict.opengl3.gl;
 import derelict.glfw3.glfw3;
 import derelict.sdl2.sdl;
+template KeyValuePair(TKey, TValue)
+{
+	class KeyValuePair
+	{
+		TKey Key;
+		TValue Value;
+	}
+}
+template Dictionary(TKey, TValue)
+{
+	class Dictionary
+	{
+		KeyValuePair[] _cache;
+		public this()
+		{
+		}
+
+
+	}
+}
 class Primitive
 {
 	private GLuint vertex;

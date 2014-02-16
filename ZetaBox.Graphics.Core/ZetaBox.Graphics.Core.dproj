@@ -73,5 +73,6 @@
     <Compile Include="ZetaBox\Graphics\Core\Primitive.d" />
     <Compile Include="ZetaBox\Graphics\Core\IRenderable.d" />
     <Compile Include="ZetaBox\Graphics\Core\Position.d" />
+    <Compile Include="ZetaBox\Graphics\Core\INode.d" />
   </ItemGroup>
 </Project>
