@@ -32,6 +32,7 @@
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
     <OutputName>ZetaBox.Simulation</OutputName>
+    <ExtraCompilerArguments>-H -Hd"export"</ExtraCompilerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,6 +44,7 @@
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
     <OutputName>ZetaBox.Simulation</OutputName>
+    <ExtraCompilerArguments>-H -Hd"export"</ExtraCompilerArguments>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="__blank.d" />

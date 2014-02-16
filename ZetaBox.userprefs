@@ -1,11 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ZetaSpace\main.d">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ZetaBox.Simulation.Math\ZetaBox\Simulation\Math\Vector.d">
     <Files>
-      <File FileName="ZetaSpace\main.d" Line="12" Column="4" />
+      <File FileName="ZetaSpace\main.d" Line="17" Column="24" />
       <File FileName="ZetaBox.Graphics.Core\ZetaBox\Graphics\Core\Primitive.d" Line="1" Column="1" />
       <File FileName="ZetaBox.Graphics.Core\ZetaBox\Graphics\Core\INode.d" Line="1" Column="1" />
       <File FileName="ZetaBox.Graphics.Core\ZetaBox\Graphics\Core\IRenderable.d" Line="1" Column="1" />
+      <File FileName="ZetaBox.Simulation.Math\ZetaBox\Simulation\Math\Point.d" Line="6" Column="9" />
+      <File FileName="ZetaBox.Simulation.Math\ZetaBox\Simulation\Math\Vector.d" Line="18" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

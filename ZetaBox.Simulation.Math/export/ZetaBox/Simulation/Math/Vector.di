@@ -8,8 +8,6 @@ class Vector
 
 	public Point b;
 
-	public this(Point a, Point b);
-
-	public float GetLength();
-
+	this(Point a, Point b);
+	float GetLength();
 }
