@@ -12,8 +12,8 @@
     <Compiler>DMD2</Compiler>
     <Includes>
       <Includes>
-        <Path>D:\dev\denv\derelict\import</Path>
-        <Path>D:\dev\denv\derelict\lib\dmd</Path>
+        <Path>import\derelict\import</Path>
+        <Path>import\derelict\lib\dmd</Path>
       </Includes>
     </Includes>
   </PropertyGroup>
@@ -27,16 +27,7 @@
     <Externalconsole>true</Externalconsole>
     <Target>StaticLibrary</Target>
     <OutputName>libZetaBox.Graphics</OutputName>
-    <ExtraCompilerArguments>-H -Hd"export" -I"D:\dev\denv\derelict\import"</ExtraCompilerArguments>
-    <ExtraLinkerArguments>+D:\dev\denv\derelict\lib\dmd</ExtraLinkerArguments>
-    <Libs>
-      <Libs>
-        <Lib>DerelictGL3.lib</Lib>
-        <Lib>DerelictGLFW3.lib</Lib>
-        <Lib>DerelictUtil.lib</Lib>
-        <Lib>DerelictSDL2.lib</Lib>
-      </Libs>
-    </Libs>
+    <ExtraCompilerArguments>-H -Hd"export"</ExtraCompilerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>

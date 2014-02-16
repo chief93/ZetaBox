@@ -1,6 +1,6 @@
 module main;
 
-pragma(lib, "D:\\dev\\projects\\d\\ZetaBox\\ZetaBox.Graphics.Core\\bin\\Debug\\libZetaBox.lib");
+pragma(lib, "..\\ZetaBox.Graphics.Core\\bin\\Debug\\libZetaBox.lib");
 
 import std.stdio;
 import ZetaBox.Graphics.Core.Primitive;

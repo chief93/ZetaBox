@@ -28,7 +28,6 @@
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
     <OutputName>ZetaSpace</OutputName>
-    <ExtraCompilerArguments> -I"..\ZetaBox.Graphics.Core\export" -I"..\ZetaBox.Graphics.Core\bin\Debug\"</ExtraCompilerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>
@@ -64,8 +63,6 @@
     <ExtraCompilerArguments> -I"..\ZetaBox.Graphics.Core\export" -I"..\ZetaBox.Graphics.Core\bin\Debug\"</ExtraCompilerArguments>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="main.d">
-      <LastGenOutput>obj\Debug\main.obj</LastGenOutput>
-    </Compile>
+    <Compile Include="main.d" />
   </ItemGroup>
 </Project>

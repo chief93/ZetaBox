@@ -1,9 +1,9 @@
 // D import file generated from 'ZetaBox\Graphics\Core\Primitive.d'
 module ZetaBox.Graphics.Core.Primitive;
-pragma (lib, "D:\\dev\\denv\\derelict\\lib\\dmd\\DerelictUtil.lib");
-pragma (lib, "D:\\dev\\denv\\derelict\\lib\\dmd\\DerelictGL3.lib");
-pragma (lib, "D:\\dev\\denv\\derelict\\lib\\dmd\\DerelictGLFW3.lib");
-pragma (lib, "D:\\dev\\denv\\derelict\\lib\\dmd\\DerelictSDL2.lib");
+pragma (lib, "..\\ZetaBox.Graphics.Core\\import\\derelict\\lib\\dmd\\DerelictUtil.lib");
+pragma (lib, "..\\ZetaBox.Graphics.Core\\import\\derelict\\lib\\dmd\\DerelictGL3");
+pragma (lib, "..\\ZetaBox.Graphics.Core\\import\\derelict\\lib\\dmd\\DerelictGLFW3");
+pragma (lib, "..\\ZetaBox.Graphics.Core\\import\\derelict\\lib\\dmd\\DerelictSDL2");
 import std.stdio;
 import std.string;
 import std.conv;
