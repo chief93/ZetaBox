@@ -9,7 +9,6 @@
     <UseDefaultCompiler>true</UseDefaultCompiler>
     <IncrementalLinking>true</IncrementalLinking>
     <PreferOneStepBuild>true</PreferOneStepBuild>
-    <BaseDirectory>.</BaseDirectory>
     <Compiler>DMD2</Compiler>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -20,7 +19,7 @@
     <DebugLevel>0</DebugLevel>
     <UnittestMode>false</UnittestMode>
     <Externalconsole>true</Externalconsole>
-    <Target>Executable</Target>
+    <Target>StaticLibrary</Target>
     <OutputName>ZetaBox.Graphics</OutputName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
