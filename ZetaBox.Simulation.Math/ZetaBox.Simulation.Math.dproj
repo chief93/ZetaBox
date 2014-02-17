@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="ZetaBox\Simulation\Math\Vector.d" />
     <Compile Include="ZetaBox\Simulation\Math\Point.d" />
+    <Compile Include="ZetaBox\Simulation\Math\PositionVector.d" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ZetaBox\" />
