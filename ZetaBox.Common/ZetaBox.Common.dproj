@@ -50,12 +50,11 @@
   <ItemGroup>
     <Folder Include="ZetaBox\" />
     <Folder Include="ZetaBox\Common\" />
-    <Folder Include="ZetaBox\Common\Collections\" />
-    <Folder Include="ZetaBox\Common\Events\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ZetaBox\Common\Collections\Dictionary.d" />
-    <Compile Include="ZetaBox\Common\Collections\KeyValuePair.d" />
-    <Compile Include="ZetaBox\Common\Events\IEvent.d" />
+    <Compile Include="ZetaBox\Common\Collections.d" />
+    <Compile Include="ZetaBox\Common\Events.d" />
+    <Compile Include="ZetaBox\Common\Containers.d" />
+    <Compile Include="ZetaBox\Common\IO.d" />
   </ItemGroup>
 </Project>

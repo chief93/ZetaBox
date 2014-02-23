@@ -14,6 +14,8 @@
       <Includes>
         <Path>..\lib\derelict\import</Path>
         <Path>..\lib\derelict\lib\dmd</Path>
+        <Path>..\output\import</Path>
+        <Path>..\output\lib</Path>
       </Includes>
     </Includes>
   </PropertyGroup>
@@ -71,9 +73,12 @@
     <Folder Include="ZetaBox\Graphics\Core\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ZetaBox\Graphics\Core\Primitive.d" />
-    <Compile Include="ZetaBox\Graphics\Core\IRenderable.d" />
-    <Compile Include="ZetaBox\Graphics\Core\Position.d" />
-    <Compile Include="ZetaBox\Graphics\Core\INode.d" />
+    <Compile Include="ZetaBox\Graphics\Core\Actor.d" />
+    <Compile Include="ZetaBox\Graphics\Core\Camera.d" />
+    <Compile Include="ZetaBox\Graphics\Core\Screen.d" />
+    <Compile Include="ZetaBox\Graphics\Core\GL.d" />
+    <Compile Include="ZetaBox\Graphics\Core\Layout.d" />
+    <Compile Include="ZetaBox\Graphics\Core\Color.d" />
+    <Compile Include="ZetaBox\Graphics\Core\Model.d" />
   </ItemGroup>
 </Project>

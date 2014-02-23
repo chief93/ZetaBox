@@ -1,38 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ZetaBox.Graphics.Core\ZetaBox\Graphics\Core\Primitive.d">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ZetaSpace\main.d">
     <Files>
-      <File FileName="ZetaSpace\main.d" Line="3" Column="18" />
-      <File FileName="ZetaBox.Graphics.Core\ZetaBox\Graphics\Core\Primitive.d" Line="3" Column="18" />
-      <File FileName="ZetaBox.Graphics.Core\ZetaBox\Graphics\Core\INode.d" Line="1" Column="1" />
-      <File FileName="ZetaBox.Graphics.Core\ZetaBox\Graphics\Core\IRenderable.d" Line="1" Column="1" />
-      <File FileName="ZetaBox.Common\ZetaBox\Common\Collections\Dictionary.d" Line="1" Column="1" />
-      <File FileName="ZetaBox.Common\ZetaBox\Common\Collections\KeyValuePair.d" Line="1" Column="1" />
-      <File FileName="ZetaBox.Common\ZetaBox\Common\Events\IEvent.d" Line="1" Column="1" />
+      <File FileName="ZetaSpace\main.d" Line="16" Column="36" />
+      <File FileName="ZetaBox.Graphics.Core\ZetaBox\Graphics\Core\GL.d" Line="7" Column="18" />
+      <File FileName="ZetaBox.Graphics.Core\ZetaBox\Graphics\Core\Model.d" Line="33" Column="41" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="ZetaBox.Common" expanded="True">
-            <Node name="ZetaBox" expanded="True">
-              <Node name="Common" expanded="True">
-                <Node name="Collections" expanded="True" />
-                <Node name="Events" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-          <Node name="ZetaBox.Graphics.Core" expanded="True">
-            <Node name="References" expanded="True" />
-            <Node name="ZetaBox" expanded="True">
-              <Node name="Graphics" expanded="True">
-                <Node name="Core" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-          <Node name="ZetaSpace" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

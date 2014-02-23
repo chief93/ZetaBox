@@ -1,4 +1,4 @@
-﻿module ZetaBox.Common.Events.IEvent;
+﻿module ZetaBox.Common.Events;
 
 interface IEvent {
 	void Dispatch ();

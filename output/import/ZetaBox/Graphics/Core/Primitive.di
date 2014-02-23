@@ -1,22 +1,27 @@
 // D import file generated from 'ZetaBox\Graphics\Core\Primitive.d'
 module ZetaBox.Graphics.Core.Primitive;
-pragma (lib, "..\\lib\\derelict\\lib\\dmd\\DerelictUtil");
-pragma (lib, "..\\lib\\derelict\\lib\\dmd\\DerelictGL3");
-pragma (lib, "..\\lib\\derelict\\lib\\dmd\\DerelictGLFW3");
-pragma (lib, "..\\lib\\derelict\\lib\\dmd\\DerelictSDL2");
 import std.stdio;
 import std.string;
 import std.conv;
-import derelict.util.loader;
-import derelict.opengl3.gl;
-import derelict.glfw3.glfw3;
-import derelict.sdl2.sdl;
+import ZetaBox.Graphics.Core.GL;
 class Primitive
 {
 	private GLuint vertex;
 
+	private SDL_GLContext context;
+
+	private SDL_Window* window;
+
 	public this();
 
-	private void sdl();
+	public void viewport();
+
+	public void clear();
+
+	public void info();
+
+	public void model();
+
+	public void render();
 
 }

@@ -12,10 +12,11 @@ template Dictionary(TKey, TValue)
 		}
 
 
-		public void Set(TKey key, TValue value)
+		public Dictionary!(TKey, TValue) Set(TKey key, TValue value)
 		{
 			KeyValuePair!(TKey, TValue) item = new KeyValuePair!(TKey, TValue)(key, value);
 			_cache ~= item;
+			return this;
 		}
 
 
