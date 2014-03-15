@@ -1,10 +1,6 @@
 // D import file generated from 'ZetaBox\Common\Containers.d'
 module ZetaBox.Common.Containers;
-import ZetaBox.Common.Collections;
-import ZetaBox.Common.IO;
-class Containers
-{
-}
+import ZetaBox.Common.Loader;
 template IResource(TResource)
 {
 	interface IResource

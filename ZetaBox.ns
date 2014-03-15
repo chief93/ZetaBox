@@ -1,0 +1,42 @@
+{
+	"Name": "ZetaBox",
+	"Output":{
+		"Executable":"output/exe",
+		"Library":"output/lib",
+		"Headers":"output/import"
+	},
+	"Import":[
+		"output/import",
+		"output/lib"
+	],
+	"Projects":[
+		{
+			"Location":"ZetaBox.Common",
+			"Target":"Library",
+			"Import":[]
+		},
+		{
+			"Location":"ZetaBox.Graphics",
+			"Target":"Library",
+			"Import":[
+				"lib/derelict/import",
+				"lib/derelict/lib"
+			]
+		},
+		{
+			"Location":"ZetaBox.Simulation",
+			"Target":"Library",
+			"Import":[]
+		},
+		{
+			"Location":"ZetaBox.Sound",
+			"Target":"Library",
+			"Import":[]
+		},
+		{
+			"Location":"ZetaSpace",
+			"Target":"Executable",
+			"Import":[]
+		}
+	]
+}

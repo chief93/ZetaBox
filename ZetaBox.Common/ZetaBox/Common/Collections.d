@@ -1,7 +1,5 @@
 ﻿module ZetaBox.Common.Collections;
 
-class Collections {}
-
 class KeyValuePair (TKey, TValue) {
 	public TKey Key;
 	public TValue Value;
@@ -17,7 +15,10 @@ class List (TValue) {
 	protected TValue[] _cache;
 	protected uint __i;
 
-	public @property bool empty () { return __i == _cache.length - 1; }
+	public @property int Count () { return _cache.length; }
+
+	// enabling foreach iteration support
+	public @property bool empty () { return __i == _cache.length; }
 	public @property ref TValue front () { return _cache[__i]; }
 	public void popFront () { __i++; }
 	

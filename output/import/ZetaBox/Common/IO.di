@@ -4,10 +4,7 @@ import std.conv;
 import std.file;
 import std.path;
 import std.string;
-import ZetaBox.Common.Collections;
-class IO
-{
-}
+import ZetaBox.Common.Loader;
 class File
 {
 	private string _name;

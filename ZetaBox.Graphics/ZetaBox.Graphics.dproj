@@ -5,11 +5,19 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{93C70EF5-9C30-4E37-9C19-7E84E41824AC}</ProjectGuid>
+    <ProjectGuid>{26A1F075-0BCC-4B71-A378-F5B2B831B4A9}</ProjectGuid>
     <UseDefaultCompiler>true</UseDefaultCompiler>
     <IncrementalLinking>true</IncrementalLinking>
     <PreferOneStepBuild>true</PreferOneStepBuild>
     <Compiler>DMD2</Compiler>
+    <Includes>
+      <Includes>
+        <Path>..\lib\derelict\import</Path>
+        <Path>..\lib\derelict\lib\dmd</Path>
+        <Path>..\output\import</Path>
+        <Path>..\output\lib</Path>
+      </Includes>
+    </Includes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,7 +28,7 @@
     <UnittestMode>false</UnittestMode>
     <Externalconsole>true</Externalconsole>
     <Target>StaticLibrary</Target>
-    <OutputName>ZetaBoxCommon</OutputName>
+    <OutputName>ZetaBoxGraphics</OutputName>
     <ExtraCompilerArguments>-H -Hd"..\output\import" -op</ExtraCompilerArguments>
     <DDocDirectory>..\doc</DDocDirectory>
   </PropertyGroup>
@@ -33,7 +41,7 @@
     <Externalconsole>true</Externalconsole>
     <Target>StaticLibrary</Target>
     <OutputName>libZetaBox</OutputName>
-    <ExtraCompilerArguments>-H -Hd"export"</ExtraCompilerArguments>
+    <ExtraCompilerArguments>-H -Hd"..\output\import" -op</ExtraCompilerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,17 +53,21 @@
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
     <OutputName>libZetaBox</OutputName>
-    <ExtraCompilerArguments>-H -Hd"export"</ExtraCompilerArguments>
+    <ExtraCompilerArguments>-H -Hd"..\output\import" -op</ExtraCompilerArguments>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="ZetaBox\" />
-    <Folder Include="ZetaBox\Common\" />
+    <Compile Include="ZetaBox\Graphics\Actor.d" />
+    <Compile Include="ZetaBox\Graphics\Camera.d" />
+    <Compile Include="ZetaBox\Graphics\Color.d" />
+    <Compile Include="ZetaBox\Graphics\GL.d" />
+    <Compile Include="ZetaBox\Graphics\Layout.d" />
+    <Compile Include="ZetaBox\Graphics\Model.d" />
+    <Compile Include="ZetaBox\Graphics\Screen.d" />
+    <Compile Include="ZetaBox\Graphics\Loader.d" />
+    <Compile Include="ZetaBox\Graphics\Entities.d" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ZetaBox\Common\Collections.d" />
-    <Compile Include="ZetaBox\Common\Containers.d" />
-    <Compile Include="ZetaBox\Common\Events.d" />
-    <Compile Include="ZetaBox\Common\IO.d" />
-    <Compile Include="ZetaBox\Common\Loader.d" />
+    <Folder Include="ZetaBox\" />
+    <Folder Include="ZetaBox\Graphics\" />
   </ItemGroup>
 </Project>

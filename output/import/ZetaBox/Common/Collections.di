@@ -1,8 +1,5 @@
 // D import file generated from 'ZetaBox\Common\Collections.d'
 module ZetaBox.Common.Collections;
-class Collections
-{
-}
 template KeyValuePair(TKey, TValue)
 {
 	class KeyValuePair
@@ -33,9 +30,16 @@ template List(TValue)
 
 		protected uint __i;
 
+		public @property int Count()
+		{
+			return _cache.length;
+		}
+
+
+
 		public @property bool empty()
 		{
-			return __i == _cache.length - 1;
+			return __i == _cache.length;
 		}
 
 

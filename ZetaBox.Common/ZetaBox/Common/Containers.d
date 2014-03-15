@@ -1,9 +1,6 @@
 ﻿module ZetaBox.Common.Containers;
 
-import ZetaBox.Common.Collections;
-import ZetaBox.Common.IO;
-
-class Containers {}
+import ZetaBox.Common.Loader;
 
 interface IResource (TResource) {
 	TResource Use ();
