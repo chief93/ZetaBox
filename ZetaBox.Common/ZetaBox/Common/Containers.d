@@ -1,4 +1,4 @@
-﻿module ZetaBox.Common.Containers;
+module ZetaBox.Common.Containers;
 
 import ZetaBox.Common.Loader;
 

@@ -30,7 +30,7 @@ template List(TValue)
 
 		protected uint __i;
 
-		public @property int Count()
+		public @property ulong Count()
 		{
 			return _cache.length;
 		}

@@ -1,4 +1,4 @@
-﻿module ZetaBox.Common.Collections;
+module ZetaBox.Common.Collections;
 
 class KeyValuePair (TKey, TValue) {
 	public TKey Key;
@@ -15,7 +15,7 @@ class List (TValue) {
 	protected TValue[] _cache;
 	protected uint __i;
 
-	public @property int Count () { return _cache.length; }
+	public @property ulong Count () { return _cache.length; }
 
 	// enabling foreach iteration support
 	public @property bool empty () { return __i == _cache.length; }
