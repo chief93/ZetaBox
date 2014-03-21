@@ -1,4 +1,4 @@
-// D import file generated from 'ZetaBox\Common\Collections.d'
+// D import file generated from 'D:\dev\projects\d\ZetaBox\ZetaBox.Common\ZetaBox\Common\Collections.d'
 module ZetaBox.Common.Collections;
 template KeyValuePair(TKey, TValue)
 {

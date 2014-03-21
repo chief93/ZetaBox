@@ -1,4 +1,4 @@
-// D import file generated from 'ZetaBox\Graphics\Camera.d'
+// D import file generated from 'D:\dev\projects\d\ZetaBox\ZetaBox.Graphics\ZetaBox\Graphics\Camera.d'
 module ZetaBox.Graphics.Camera;
 import ZetaBox.Graphics.Actor;
 import ZetaBox.Graphics.Layout;

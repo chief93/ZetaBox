@@ -1,5 +1,7 @@
-// D import file generated from 'ZetaBox\Graphics\Entities.d'
+// D import file generated from 'D:\dev\projects\d\ZetaBox\ZetaBox.Graphics\ZetaBox\Graphics\Entities.d'
 module ZetaBox.Graphics.Entities;
+import std.path;
+pragma (lib, buildNormalizedPath("ZetaBoxCommon"));
 import ZetaBox.Common.Loader;
 import ZetaBox.Graphics.Layout;
 interface ITexture

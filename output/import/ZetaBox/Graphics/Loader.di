@@ -1,4 +1,4 @@
-// D import file generated from 'ZetaBox\Graphics\Loader.d'
+// D import file generated from 'D:\dev\projects\d\ZetaBox\ZetaBox.Graphics\ZetaBox\Graphics\Loader.d'
 module ZetaBox.Graphics.Loader;
 public import ZetaBox.Graphics.Actor;
 

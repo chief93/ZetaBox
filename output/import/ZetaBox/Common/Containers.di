@@ -1,4 +1,4 @@
-// D import file generated from 'ZetaBox\Common\Containers.d'
+// D import file generated from 'D:\dev\projects\d\ZetaBox\ZetaBox.Common\ZetaBox\Common\Containers.d'
 module ZetaBox.Common.Containers;
 import ZetaBox.Common.Loader;
 template IResource(TResource)

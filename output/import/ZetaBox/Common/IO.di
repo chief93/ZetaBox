@@ -1,4 +1,4 @@
-// D import file generated from 'ZetaBox\Common\IO.d'
+// D import file generated from 'D:\dev\projects\d\ZetaBox\ZetaBox.Common\ZetaBox\Common\IO.d'
 module ZetaBox.Common.IO;
 import std.conv;
 import std.file;

@@ -1,4 +1,4 @@
-// D import file generated from 'ZetaBox\Graphics\Layout.d'
+// D import file generated from 'D:\dev\projects\d\ZetaBox\ZetaBox.Graphics\ZetaBox\Graphics\Layout.d'
 module ZetaBox.Graphics.Layout;
 class Axis2D
 {

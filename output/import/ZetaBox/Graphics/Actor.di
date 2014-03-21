@@ -1,4 +1,4 @@
-// D import file generated from 'ZetaBox\Graphics\Actor.d'
+// D import file generated from 'D:\dev\projects\d\ZetaBox\ZetaBox.Graphics\ZetaBox\Graphics\Actor.d'
 module ZetaBox.Graphics.Actor;
 import ZetaBox.Graphics.Layout;
 interface IActor2D

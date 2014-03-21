@@ -1,4 +1,8 @@
-﻿module ZetaBox.Graphics.Entities;
+module ZetaBox.Graphics.Entities;
+
+import std.path;
+
+pragma(lib, buildNormalizedPath("ZetaBoxCommon"));
 
 import ZetaBox.Common.Loader;
 

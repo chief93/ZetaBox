@@ -1,4 +1,4 @@
-// D import file generated from 'ZetaBox\Graphics\Model.d'
+// D import file generated from 'D:\dev\projects\d\ZetaBox\ZetaBox.Graphics\ZetaBox\Graphics\Model.d'
 module ZetaBox.Graphics.Model;
 import ZetaBox.Common.Loader;
 import ZetaBox.Graphics.GL;

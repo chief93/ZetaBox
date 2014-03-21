@@ -6,8 +6,8 @@
 		"Headers":"output/import"
 	},
 	"Import":[
-		"output/import",
-		"output/lib"
+		"/output/import",
+		"/output/lib"
 	],
 	"Projects":[
 		{
@@ -19,8 +19,8 @@
 			"Location":"ZetaBox.Graphics",
 			"Target":"Library",
 			"Import":[
-				"lib/derelict/import",
-				"lib/derelict/lib"
+				"/lib/derelict/import",
+				"/lib/derelict/lib/dmd"
 			]
 		},
 		{
@@ -36,7 +36,10 @@
 		{
 			"Location":"ZetaSpace",
 			"Target":"Executable",
-			"Import":[]
+			"Import":[
+				"/lib/derelict/import",
+				"/lib/derelict/lib/dmd"
+			]
 		}
 	]
 }

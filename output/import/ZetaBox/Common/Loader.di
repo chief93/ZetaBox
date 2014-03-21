@@ -1,4 +1,4 @@
-// D import file generated from 'ZetaBox\Common\Loader.d'
+// D import file generated from 'D:\dev\projects\d\ZetaBox\ZetaBox.Common\ZetaBox\Common\Loader.d'
 module ZetaBox.Common.Loader;
 public import ZetaBox.Common.Collections;
 

@@ -3,9 +3,23 @@ module main;
 import std.path;
 import std.stdio;
 
-pragma(lib, buildNormalizedPath("../output/lib/ZetaBoxCommon"));
-pragma(lib, buildNormalizedPath("../output/lib/ZetaBoxGraphics"));
-pragma(lib, buildNormalizedPath("../output/lib/ZetaBoxSound"));
+//pragma(lib, buildNormalizedPath("../output/lib/ZetaBoxCommon"));
+//pragma(lib, buildNormalizedPath("../output/lib/ZetaBoxGraphics"));
+//pragma(lib, buildNormalizedPath("../output/lib/ZetaBoxSound"));
+
+//pragma(lib, buildNormalizedPath("DerelictUtil"));
+//pragma(lib, buildNormalizedPath("DerelictGL3"));
+//pragma(lib, buildNormalizedPath("DerelictGLFW3"));
+//pragma(lib, buildNormalizedPath("DerelictSDL2"));
+
+pragma(lib, buildNormalizedPath("ZetaBoxCommon"));
+pragma(lib, buildNormalizedPath("ZetaBoxGraphics"));
+pragma(lib, buildNormalizedPath("ZetaBoxSound"));
+
+//pragma(lib, buildNormalizedPath("../lib/derelict/lib/dmd/DerelictUtil"));
+//pragma(lib, buildNormalizedPath("../lib/derelict/lib/dmd/DerelicGL3"));
+//pragma(lib, buildNormalizedPath("../lib/derelict/lib/dmd/DerelicGLFW3"));
+//pragma(lib, buildNormalizedPath("../lib/derelict/lib/dmd/DerelicSDL2"));
 
 import ZetaBox.Common.Loader;
 import ZetaBox.Graphics.Loader;

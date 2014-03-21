@@ -1,4 +1,4 @@
-// D import file generated from 'ZetaBox\Graphics\Screen.d'
+// D import file generated from 'D:\dev\projects\d\ZetaBox\ZetaBox.Graphics\ZetaBox\Graphics\Screen.d'
 module ZetaBox.Graphics.Screen;
 import std.conv;
 import std.string;
