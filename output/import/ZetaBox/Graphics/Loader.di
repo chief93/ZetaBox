@@ -14,3 +14,5 @@ public import ZetaBox.Graphics.Model;
 
 public import ZetaBox.Graphics.Screen;
 
+public import ZetaBox.Graphics.Window;
+

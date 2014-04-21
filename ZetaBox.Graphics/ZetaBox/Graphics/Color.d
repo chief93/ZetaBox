@@ -1,4 +1,4 @@
-﻿module ZetaBox.Graphics.Color;
+module ZetaBox.Graphics.Color;
 
 class Color {
 	public float Red;

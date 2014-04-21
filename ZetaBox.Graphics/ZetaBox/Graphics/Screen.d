@@ -1,4 +1,4 @@
-﻿module ZetaBox.Graphics.Screen;
+module ZetaBox.Graphics.Screen;
 
 import std.conv;
 import std.string;
@@ -38,8 +38,9 @@ public class Screen : IActor2D {
 	}
 
 	public void Clear (Color color) {
+		//glColorMask(true, true, true, false);
 		glClearColor(color.Red, color.Green, color.Blue, color.Alpha);
-		glClear(GL_COLOR_BUFFER_BIT/* | GL_DEPTH_BUFFER_BIT*/);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	}
 
 	public void Viewport (Layout2D layout) {
@@ -49,7 +50,7 @@ public class Screen : IActor2D {
 			_title,
 			SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
 			cast(int)_layout.Dimension.x, cast(int)_layout.Dimension.y,
-			SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN// | SDL_WINDOW_BORDERLESS
+			SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN | SDL_WINDOW_BORDERLESS
 		);
 		
 		_context=SDL_GL_CreateContext(_screen);
@@ -61,6 +62,19 @@ public class Screen : IActor2D {
 			cast(GLsizei)_layout.Dimension.x,
 			cast(GLsizei)_layout.Dimension.y
 		);
+	}
+	
+	public void AlphaBg () {
+		glEnable(GL_ALPHA_TEST);
+		glEnable(GL_DEPTH_TEST);
+		glEnable(GL_COLOR_MATERIAL);
+		
+		glEnable(GL_LIGHTING);
+		glEnable(GL_LIGHT0);
+		
+		glEnable(GL_BLEND);
+		
+		glBlendFunc(GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA);
 	}
 
 	public void Render () {

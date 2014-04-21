@@ -7,3 +7,4 @@ public import ZetaBox.Graphics.GL;
 public import ZetaBox.Graphics.Layout;
 public import ZetaBox.Graphics.Model;
 public import ZetaBox.Graphics.Screen;
+public import ZetaBox.Graphics.Window;

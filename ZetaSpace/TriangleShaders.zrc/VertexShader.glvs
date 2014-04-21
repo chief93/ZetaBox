@@ -1,4 +1,6 @@
+#version 330
 attribute vec2 coord;
+/*layout (location = 0) in vec3 coord;*/
 
 void main() {
 	gl_Position = vec4(coord, 0.0, 1.0);

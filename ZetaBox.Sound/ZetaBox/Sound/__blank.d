@@ -1,2 +1,2 @@
-﻿module ZetaBox.Sound.__blank;
+module ZetaBox.Sound.__blank;
 

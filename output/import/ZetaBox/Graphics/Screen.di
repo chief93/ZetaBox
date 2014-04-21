@@ -39,6 +39,8 @@ public class Screen : IActor2D
 
 	public void Viewport(Layout2D layout);
 
+	public void AlphaBg();
+
 	public void Render();
 
 	public void PrintGLInfo();

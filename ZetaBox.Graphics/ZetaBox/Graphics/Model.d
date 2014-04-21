@@ -1,4 +1,4 @@
-﻿module ZetaBox.Graphics.Model;
+module ZetaBox.Graphics.Model;
 
 import ZetaBox.Common.Loader;
 
@@ -32,17 +32,22 @@ class Model : IBufferResource!Model, IFileResource!Model, IRenderable {
 	public @property GLuint Vertices () { return _vBuffer; }
 
 	public void Render () {
-		glBufferData(GL_ARRAY_BUFFER, _vData.length*float.sizeof, _vData.ptr, GL_STATIC_DRAW);
-		glBufferData(GL_ELEMENT_ARRAY_BUFFER, _iData.length*float.sizeof, _iData.ptr, GL_STATIC_DRAW);
+		glBufferData(GL_ARRAY_BUFFER, _vData.length * float.sizeof, _vData.ptr, GL_STATIC_DRAW);
+		glBufferData(GL_ELEMENT_ARRAY_BUFFER, _iData.length * float.sizeof, _iData.ptr, GL_STATIC_DRAW);
 
 		glEnableVertexAttribArray(0);
 
 		glBindBuffer(GL_ARRAY_BUFFER, _vBuffer);
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _iBuffer);
-
-		glVertexAttribPointer(0, _vCount, GL_FLOAT, GL_FALSE, 0, cast(const(void*))0);
-		//glDrawArrays(GL_TRIANGLES, 0, _vCount);
+		
+		// second argument - number of vertices in SELECTED primitive
+		// Ex: triangle - 3
+		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, cast(const(void*))0);
+		
+		// second argument - number of vertices in OUTPUT primitive
+		// Ex: square - 4 (set from number of AddVertex() calls)
 		glDrawElements(GL_TRIANGLES, _vCount, GL_UNSIGNED_INT, null);
+		//glDrawArrays(GL_TRIANGLES, 0, _vCount);
 
 		glDisableVertexAttribArray(0);
 	}
